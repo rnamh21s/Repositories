@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- javascript -->
+<script type="text/javascript" src="/PHPtest/js/jquery/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/PHPtest/js/ajax.js"></script>
+<script type="text/javascript" src="/PHPtest/js/onlyNumber.js"></script>
+<!-- css -->
+<!-- <link rel="stylesheet" type="text/css" href="/PHPtest/css/main.css"> -->
+<title>jQuery & Ajax & PHP Example</title>
+</head>
+<body>
+<h1>管理者画面</h1>
+    <form method="post">
+    	平成<input id="year" class="onlyNumber" type="text" size="2" maxlength="2" onkeydown="return onlyNumber(event)" oncontextmenu="return false;">年度
+		<select id="season">
+			<option value="spring">春期</option>
+			<option value="autumn">秋期</option>
+		</select>
+		<select id="timeLocation">
+			<option value="AM">午前</option>
+			<option value="AM1">午前Ⅰ</option>
+			<option value="AM2">午前Ⅱ</option>
+		</select>
+        
+        
+        <p><input id="send" value="送信" type="submit" /></p>
+    </form>
+</body>
+</html>
